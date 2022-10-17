@@ -5,18 +5,19 @@
 
 /* Selector List */
 em,i {
-    color: rebeccapurple;
+    color: hsl(270, 50%, 40%);
     font-weight: 900;
 }
 
 /* id selector */
 #form {
-    font-family:fantasy;
+    font-family: 'Roboto', sans-serif;
+    position:static;
 }
 
 /* attribute selector */
 a[href] {
-    background-color: grey;
+    background-color: rgb(128, 128, 128);
 }
 
 /* pseudo-class selector */
@@ -27,12 +28,36 @@ div:hover {
 /* element selector */
 h1 {
     text-align: center;
+    text-decoration: underline;
     background-color: pink;
+    height: auto;
+    width:auto;
+    max-width: 50cm;
+    max-height: 50cm;
 }
 
+.misc {
+    border:5px solid palevioletred;
+    margin:auto;
+}
 /* Descendant combinator */
-ol li {
-    text-indent: 20px;
+main ol {
+    text-indent: 1em;
+    position: relative;
+    border-style: ridge;
+    border-radius:5pt;
+    border-top: 5px solid red;
+    border-left: 5px solid red;
+    border-right: 5px solid red;
+    border-bottom: 5px solid red;
+    margin-top: 20px;
+    margin-right:20cm;
+    margin-bottom: 20px;
+    margin-left:0px;
+    padding-top: 1ex;
+    padding-bottom: 1ex;
+    padding-left: 10ch;
+    padding-right: 5ch;
 }
 
 /* Child combinator */
@@ -53,4 +78,52 @@ mark ~ mark {
 /* Combining Two Selectors combinator */
 h4#subscribe {
     color: teal;
+}
+
+button:active {
+    color:blueviolet;
+}
+
+.flex-cont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.grid-cont {
+    display: grid;
+    column-gap: 50px;
+    grid-template-areas:
+    'header header header spot2 spot2 spot2'
+    'spot3 spot3 spot3 spot4 spot4 spot4'
+    'spot5 spot5 spot5 spot6 spot6 spot6'
+    'spot7 spot7 spot7 spot7 spot7 spot7';
+  row-gap: 20px;
+  column-gap: 30px;
+  background-color: palevioletred;
+  padding: 20px;
+}
+
+.item1 {
+    grid-area: header;
+}
+.item2 {
+    grid-area: spot2;
+}
+.item3 {
+    grid-area: spot3;
+}
+.item4 {
+    grid-area: spot4;
+}
+.item5 {
+    grid-area: spot5;
+}
+.item6 {
+    grid-area: spot6;
+}
+.item7 {
+    grid-area: spot7;
 }

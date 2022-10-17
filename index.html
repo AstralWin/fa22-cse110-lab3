@@ -6,17 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- This is the title!-->
     <title>Meeting Minutes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <style>
         /* class selector */
         .welcomeaddress {
             text-align: center;
-            border:10px solid palevioletred;
+            border-color: palevioletred;
+            border-style: solid;
+            border-width:10px;
+            border-radius:5px;
+            margin:10px 20px 10px 20px;
+            padding:5px 20px 5px 20px;
         }
 
         .header {
             text-align: center;
+        }
+        
+        @media screen and (min-width: 1080px) {
+            #grid{width: 200px; float: left;}
+            #recap{padding-top: -1cm; padding-left: 2cm;}
         }
     </style>
   </head>
@@ -35,16 +48,17 @@
     </header>
     <main>
         <h2>List of Attendees</h2>
-        <ul>
-            <li><strong>Alwin Low Min Wai</strong></li>
-            <li>Thomas Kay</li>
-            <li>Tyler Lee</li>
-            <li>Nelson Sim</li>
-            <li>Chris Lai</li>
-            <li>Jason Rodriguez</li>
-            <li>Simon Wolkner</li>
+        <ul class="grid-cont" id="grid">
+            <li class="item1"><strong>Alwin Low Min Wai</strong></li>
+            <li class="item2">Thomas Kay</li>
+            <li class="item3">Tyler Lee</li>
+            <li class="item4">Nelson Sim</li>
+            <li class="item5">Chris Lai</li>
+            <li class="item6">Jason Rodriguez</li>
+            <li class="item7">Simon Wolkner</li>
         </ul>
 
+        <section class="flex-cont" id="recap">
         <h2>Recap on previous meeting</h2>
         <img
         src="https://img.freepik.com/free-vector/group-people-illustration-set_52683-33806.jpg?w=2000"
@@ -55,8 +69,8 @@
         president, <em>Jay Johnson</em>, prepared a farewell speech for the entire
         organization. The following is a brief part of his speech:
         <b>"To all my fellow club members, it has been a wonderful time
-            serving as your president over the last 3 years. My journey
-            has come to a close, but we will meet again."</b>
+            serving as your president over the last 3 years. <div style="display: block">My journey
+            has come to a close, but we will meet again."</div></b>
         </p>
 
         <hr>
@@ -70,10 +84,11 @@
 
         <p>Finalized the organization of the social party. Started ironing out details
             such as the budget and timeslot. Nelson Sim was chosen to lead the project
-            and was tasked with inspecting the venue. Full report on that expected today. </p>
+            and was tasked with inspecting the venue. <div style="display: inline">Full report on that expected today. </div></p>
 
         <hr>
         <div>Note: It was an emotional day for everyone involved.</div>
+    </section>
         <hr>
         <h2>Agenda</h2>
         <img
@@ -142,8 +157,8 @@
     </nav>
     <br>
 
-    <h2>Miscellaneous Comments</h2>
-    <p>Jason Rodriguez said that we should organized a farewell party for previous
+    <h2 class="misc">Miscellaneous Comments</h2>
+    <p class="misc">Jason Rodriguez said that we should organized a farewell party for previous
         board of directors. This could also act as an introduction to the new board of directors.
         Everyone agreed with this proposal and the details will be dealt with in the next meeting. <br><br>
         Tyler Lee said that he was going to be away for a week so he would not be able to
