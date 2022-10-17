@@ -7,6 +7,13 @@
     <!-- This is the title!-->
     <title>Meeting Minutes</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .welcomeaddress {
+            background-color: palevioletred;
+            text-align: center;
+        }
+    </style>
   </head>
   <body>
     <header>
@@ -102,7 +109,7 @@
         </p>
     </main>
     
-    <section>
+    <section class="welcomeaddress">
         <h2>Welcome Address from President Alwin</h2>
         <video width="320" height="240" controls>
             <source src="Meetingvideo.mp4" type="video/mp4">
@@ -137,7 +144,7 @@
         Tyler Lee said that he was going to be away for a week so he would not be able to
         attend the next meeting. He offered his apologies for the late notice.
     </p>
-    <footer>
+    <footer id="form">
         <h4 id="subscribe">Interested in joining the club? Enter your details.</h4>
         <form onsubmit="alert('Subscribed')">
             <fieldset>

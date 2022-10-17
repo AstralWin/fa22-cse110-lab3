@@ -1,0 +1,21 @@
+em,i {
+    color: rebeccapurple;
+    font-weight: 900;
+}
+
+#form {
+    background-color: lightpink;
+}
+
+a[href] {
+    background-color: grey;
+}
+
+div:hover {
+    background-color:red;
+}
+
+h1 {
+    text-align: center;
+    background-color: pink;
+}
