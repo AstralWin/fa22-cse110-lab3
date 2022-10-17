@@ -1,21 +1,31 @@
+/* Selector List */
 em,i {
     color: rebeccapurple;
     font-weight: 900;
 }
 
+/* id selector */
 #form {
     background-color: lightpink;
 }
 
+/* attribute selector */
 a[href] {
     background-color: grey;
 }
 
+/* pseudo-class selector */
 div:hover {
     background-color:red;
 }
 
+/* element selector */
 h1 {
     text-align: center;
     background-color: pink;
+}
+
+/* Universal selector */
+* {
+    background-color: #f3d5d5;
 }
