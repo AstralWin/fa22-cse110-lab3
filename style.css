@@ -1,3 +1,8 @@
+/* Universal selector */
+* {
+    background-color: #f3d5d5;
+}
+
 /* Selector List */
 em,i {
     color: rebeccapurple;
@@ -6,7 +11,7 @@ em,i {
 
 /* id selector */
 #form {
-    background-color: lightpink;
+    font-family:fantasy;
 }
 
 /* attribute selector */
@@ -16,7 +21,7 @@ a[href] {
 
 /* pseudo-class selector */
 div:hover {
-    background-color:red;
+    color:red;
 }
 
 /* element selector */
@@ -25,7 +30,27 @@ h1 {
     background-color: pink;
 }
 
-/* Universal selector */
-* {
-    background-color: #f3d5d5;
+/* Descendant combinator */
+ol li {
+    text-indent: 20px;
+}
+
+/* Child combinator */
+ul > li {
+    color: darkblue;
+}
+
+/* Adjacent Sibling combinator */
+h3 + mark {
+    color: maroon;
+}
+
+/* General Sibling combinator */
+mark ~ mark {
+    color: maroon;
+}
+
+/* Combining Two Selectors combinator */
+h4#subscribe {
+    color: teal;
 }
